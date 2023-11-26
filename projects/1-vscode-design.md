@@ -1,6 +1,6 @@
 ---
 title: "Visual Studio Code Redesign"
-type: "Redesign"
+type: "Redesign Concept"
 date: "Sept 27, 2023"
 image: "https://i.imgur.com/GRN5XHy.png"
 ---

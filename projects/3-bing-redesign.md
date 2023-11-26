@@ -1,6 +1,6 @@
 ---
 title: "Bing Redesign"
-type: "Redesign"
+type: "Redesign Concept"
 date: "June 1, 2023"
 image: "https://i.imgur.com/8md7sAk.png"
 ---

@@ -13,14 +13,12 @@ const tiltOptions = {
 	transition: false,
 };
 
-const staggerItems = stagger(0.1, {startDelay: 0.15});
-
 export default function ProjectPreview(props: ProjectMetadata) {
 	return (
 		<motion.div
 			initial={{y: -50, opacity: 0}}
 			whileInView={{y: 0, opacity: 1}}
-			transition={{type: "spring", stiffness: 200, duration: 0.4}}
+			transition={{type: "spring", stiffness: 200, duration: 0.4, damping: 10, delay: 0.1}}
 		>
 			<Tilt options={tiltOptions}>
 				<Link

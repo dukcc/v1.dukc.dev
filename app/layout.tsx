@@ -14,6 +14,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+	metadataBase: new URL('https://dukc.dev'),
 	title: "dukc",
 	description:
 		"I'm dukc. And I'm a versatile designer / web developer skilled in UI, graphic, motion design, and React / Vue",
@@ -66,7 +67,8 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 	return (
 		<html className={outfit.className} lang="en">
 			<body className="bg-[#050505] overflow-hidden">
-				<div className="bg-transparent text-white p-64 max-[800px]:px-24 max-[800px]:pt-48 max-[800px]:pb-24 h-screen min-h-screen overflow-hidden flex flex-col gap-[64px] z-10 max-[800px]:overflow-y-auto">
+				<div className="bg-transparent text-white p-64 max-[800px]:px-24 max-[800px]:pt-48 max-[800px]:pb-24 h-screen
+				 overflow-hidden flex flex-col gap-[64px] z-10 max-[800px]:overflow-y-auto">
 					<nav className="flex place-content-between h-fit w-full align-middle place-items-center">
 						<Link href={"/"}>
 							<Image
@@ -79,7 +81,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 						</Link>
 						<div className="flex gap-[8px] align-middle place-items-center">
 							<p className="text-[13px]">Available to work</p>
-							<div className="w-[6px] h-[6px] bg-green rounded-full"></div>
+							<div className="w-[6px] h-[6px] bg-green rounded-full animate-pulse"></div>
 						</div>
 					</nav>
 					<div className="min-h-0 w-full flex max-[800px]:flex-col gap-64 max-[800px]:gap-32 max-[800px]:min-h-auto
@@ -102,7 +104,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 						</div>
 						<div
 							id="right"
-							className="w-fit h-full max-[800px]:h-fit max-[800px]:w-full flex flex-col gap-32 align-middle place-items-center max-[800px]:pb-32"
+							className="w-fit h-full max-[800px]:h-fit max-[800px]:w-full flex flex-col gap-32 align-middle place-items-center max-[800px]:pb-128"
 						>
 							<div className="flex min-[800px]:flex-col gap-16">
 								<Link

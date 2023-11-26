@@ -15,6 +15,7 @@ const getProjectMetadata = (): ProjectMetadata[] => {
             title: matterResult.data.title,
             type: matterResult.data.type,
             image: matterResult.data.image,
+            date: matterResult.data.date,
             slug: filename.replace(".md", "")
         }
     })

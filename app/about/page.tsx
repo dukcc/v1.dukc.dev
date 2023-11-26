@@ -29,7 +29,8 @@ export default function About() {
 							I'm a versatile designer skilled in UI design, graphic design,
 							motion design, 3D design, & front-end web development. I'm
 							focusing on creating innovative apps, websites, tools, & concept
-							videos.
+							videos. I am also learning Rust, and like experimenting with
+							Python, Discord.js, and other software.
 						</p>
 					</motion.div>
 					<motion.div

@@ -104,7 +104,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 						</div>
 						<div
 							id="right"
-							className="w-fit h-full max-[800px]:h-fit max-[800px]:w-full flex flex-col gap-32 align-middle place-items-center max-[800px]:pb-128"
+							className="w-fit h-full max-[800px]:h-fit max-[800px]:w-full flex flex-col gap-32 align-middle place-items-center max-[800px]:pb-[200px]"
 						>
 							<div className="flex min-[800px]:flex-col gap-16">
 								<Link

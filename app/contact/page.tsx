@@ -3,7 +3,7 @@
 import SideNav from "@/components/SideNav";
 import Image from "next/image";
 import {motion} from "framer-motion";
-import { HiMiniClipboard } from "react-icons/hi2";
+import { HiMiniClipboard, HiMiniArrowUpRight } from "react-icons/hi2";
 
 export default function Contact() {
 	return (
@@ -99,6 +99,7 @@ export default function Contact() {
 							className="text-body w-fit"
 						>
 							Email: hello@dukc.dev
+							<HiMiniArrowUpRight className="inline ml-8" />
 						</motion.a>
 						<motion.form
 							initial={{y: -50, opacity: 0}}

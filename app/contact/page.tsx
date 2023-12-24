@@ -3,6 +3,7 @@
 import SideNav from "@/components/SideNav";
 import Image from "next/image";
 import {motion} from "framer-motion";
+import { HiMiniClipboard } from "react-icons/hi2";
 
 export default function Contact() {
 	return (
@@ -54,7 +55,7 @@ export default function Contact() {
 						>
 							Discord
 						</motion.h3>
-						<motion.p
+						<motion.button
 							initial={{opacity: 0}}
 							whileInView={{opacity: 1}}
 							transition={{
@@ -64,10 +65,12 @@ export default function Contact() {
 								duration: 0.2,
 								delay: 0.2,
 							}}
-							className="text-body w-fit"
+							onClick={() => navigator.clipboard.writeText("dukkcc")}
+							className="text-body w-fit hover-active-effect"
 						>
 							Discord username: dukkcc
-						</motion.p>
+							<HiMiniClipboard className="inline ml-8" />
+						</motion.button>
 						<motion.h3
 							initial={{y: -50, opacity: 0}}
 							whileInView={{y: 0, opacity: 1}}
@@ -82,7 +85,7 @@ export default function Contact() {
 						>
 							Email
 						</motion.h3>
-						<motion.p
+						<motion.a
 							initial={{opacity: 0}}
 							whileInView={{opacity: 1}}
 							transition={{
@@ -92,10 +95,11 @@ export default function Contact() {
 								duration: 0.2,
 								delay: 0.2,
 							}}
+							href="mailto:hello@dukc.dev"
 							className="text-body w-fit"
 						>
 							Email: hello@dukc.dev
-						</motion.p>
+						</motion.a>
 						<motion.form
 							initial={{y: -50, opacity: 0}}
 							whileInView={{y: 0, opacity: 1}}

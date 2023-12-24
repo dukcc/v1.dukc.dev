@@ -3,7 +3,7 @@
 import SideNav from "@/components/SideNav";
 import Image from "next/image";
 import {motion} from "framer-motion";
-import { HiMiniClipboard, HiMiniArrowUpRight } from "react-icons/hi2";
+import {HiMiniClipboard, HiMiniArrowUpRight} from "react-icons/hi2";
 
 export default function Contact() {
 	return (
@@ -114,6 +114,11 @@ export default function Contact() {
 							className="flex flex-col gap-16"
 							action="https://submit-form.com/MJTUBgv7"
 						>
+							<input
+								type="hidden"
+								name="_redirect"
+								value="https://www.dukc.dev/contact"
+							/>
 							<label className="text-body">Name</label>
 							<input
 								type="text"

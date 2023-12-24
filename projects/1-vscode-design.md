@@ -18,7 +18,7 @@ With a brand new UI, redesigned status bar / status widget, all new extensions p
 
 Need help with some code? Ask copilot about it. Right click on an error to find out what it means, all with whatever AI engine you want. Bing AI, Phind (GPT-4), GitHub Copilot, or Google Bard.
 
-The project I featured in the code editor is [HQLauncher (click)](https://www.duckyhq.com/posts/hqlauncher)
+The project I featured in the code editor is [HQLauncher (click)](https://www.duckyhq.com/projects/HQLauncher)
 
 This is just a concept, NOT a real product.
 I am not affiliated with Microsoft.

@@ -66,7 +66,7 @@ const hanson = localFont({
 export default function RootLayout({children}: {children: React.ReactNode}) {
 	return (
 		<html className={outfit.className} lang="en">
-			<body className="bg-[#050505] overflow-hidden">
+			<body className="bg-[#050505] overflow-clip">
 				<div className="bg-transparent text-white p-64 max-[800px]:px-24 max-[800px]:pt-48 max-[800px]:pb-24 h-screen
 				 overflow-hidden flex flex-col gap-[64px] z-10 max-[800px]:overflow-y-auto">
 					<nav className="flex place-content-between h-fit w-full align-middle place-items-center">
@@ -160,8 +160,8 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 						</div>
 					</div>
 				</div>
-				<div className="relative bottom-[70vh] left-[10vw] h-[30rem] w-[40rem] bg-gradient-to-tr animate-spin-slow from-brand-blue to-brand-purple blur-[128px] rounded-full -z-50"></div>
-				<div className="relative bottom-[90vh] left-[80vw] opacity-50 h-[40rem] w-[35rem] bg-gradient-to-tr animate-spin-slow from-brand-purple to-brand-purple blur-[128px] rounded-full -z-50"></div>
+				<div className="relative bottom-[70vh] left-[10vw] h-[30rem] w-[40rem] blur-[512px] bg-gradient-to-tr animate-spin-slow from-brand-blue to-brand-purple rounded-full -z-50"></div>
+				<div className="relative bottom-[90vh] left-[80vw] opacity-50 h-[40rem] w-[35rem] blur-[512px] bg-gradient-to-tr animate-spin-slow from-brand-purple to-brand-purple rounded-full -z-50"></div>
 			</body>
 		</html>
 	);

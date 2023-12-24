@@ -8,7 +8,7 @@ export default function Contact() {
 	return (
 		<div className="flex gap-32 min-h-0 max-[800px]:flex-col">
 			<SideNav />
-			<div className="w-full overflow-hidden h-full flex bg-bg-1 border border-stroke-1 backdrop-blur-main rounded-out">
+			<div className="w-full overflow-hidden h-full flex bg-1 border border-stroke-1 backdrop-blur-main rounded-out">
 				<div className="flex flex-col max-[800px]:place-content-start gap-128 p-64 max-[800px]:p-32 h-full w-full overflow-y-scroll">
 					<div className="flex flex-col gap-32 h-fit w-full">
 						<motion.h2
@@ -101,7 +101,7 @@ export default function Contact() {
 								id="name"
 								name="name"
 								placeholder="Name"
-								className="bg-bg-1 border w-full border-stroke-1 rounded-in py-8 px-16 placeholder-white/25"
+								className="fg-1 border w-full border-stroke-2 rounded-in py-8 px-16 placeholder-white/25"
 							/>
 							<label className="text-body">Email</label>
 							<input
@@ -109,17 +109,17 @@ export default function Contact() {
 								id="email"
 								name="email"
 								placeholder="Email"
-								className="bg-bg-1 border w-full border-stroke-1 rounded-in py-8 px-16 placeholder-white/25"
+								className="fg-1 border w-full border-stroke-2 rounded-in py-8 px-16 placeholder-white/25"
 							/>
 							<label className="text-body">Message</label>
 							<textarea
 								id="message"
 								name="message"
 								placeholder="Message"
-								className="bg-bg-1 border w-full h-[10rem] border-stroke-1 rounded-in py-8 px-16 placeholder-white/25 min-h-[48px]"
+								className="fg-1 border w-full h-[10rem] border-stroke-2 rounded-in py-8 px-16 placeholder-white/25 min-h-[48px]"
 							></textarea>
 							<button
-								className="bg-brand-blue/75 rounded-in border border-stroke-1 px-16 py-8 h-fit w-full hover:bg-brand-blue hover:-translate-y-1 active:bg-brand-blue/50 active:translate-y-2 duration-200 cursor-pointer"
+								className="bg-brand-blue/75 rounded-in border border-stroke-2 px-16 py-8 h-fit w-full hover:bg-brand-blue hover:-translate-y-1 active:bg-brand-blue/50 active:translate-y-2 duration-200 cursor-pointer"
 								type="submit"
 							>
 								Send
@@ -132,6 +132,7 @@ export default function Contact() {
 					alt="Contact image"
 					width={1000}
 					height={1000}
+					loading="eager"
 					className="w-[50%] min-[1800px]:min-w-[950px] max-[1300px]:hidden object-cover h-screen"
 				/>
 			</div>

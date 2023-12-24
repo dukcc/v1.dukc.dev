@@ -6,8 +6,11 @@
   .hover-active-effect {
     @apply hover:scale-[.9] transition-all duration-150 active:scale-[.75];
   }
-  .section-style {
-    @apply bg-bg-1 border border-stroke-1 backdrop-blur-main rounded-out;
+  .bg-1 {
+    @apply bg-gradient-to-b from-[#0f0f0f]/75 to-[#0f0f0f]/90
+  }
+  .fg-1 {
+    @apply bg-white/[.03]
   }
 }
 

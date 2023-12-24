@@ -30,11 +30,11 @@ export default function Project({
 				duration: 0.2,
 				delay: 0,
 			}}
-			className="h-fit w-full flex gap-64 max-[990px]:flex-col max-[995px]:gap-32"
+			className="h-fit w-full flex gap-64 max-[990px]:flex-col max-[995px]:gap-32 border-b pb-48 border-stroke-1"
 		>
-			<h2 className="text-2 font-medium">{title}</h2>
+			<h2 className="text-2 font-medium whitespace-nowrap max-[900px]:whitespace-normal">{title}</h2>
 			<div className="flex flex-col gap-16 max-[995px]:gap-32">
-				<p className="text-body">{description}</p>
+				<p className="text-body leading-[200%]">{description}</p>
 				<div className="flex gap-64 gap-y-8 flex-wrap">
 					<p className="text-sub">{type}</p>
 					<Link

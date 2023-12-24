@@ -33,9 +33,8 @@ const config: Config = {
         extend: {
             colors: {
                 // card colours
-                "bg-1": "rgb(15, 15, 15, 0.7)",
-                "stroke-1": "rgb(255,255,255,0.1)",
-                "fg-1": "rgb(255,255,255,0.025)",
+                "stroke-1": "rgba(255,255,255,0.075)",
+                "stroke-2": "rgba(255,255,255,0.05)",
                 // colours
                 selected: "#0db7ff",
                 "brand-blue": "#0db7ff",
@@ -55,7 +54,7 @@ const config: Config = {
                 main: "32px",
             },
             animation: {
-                "spin-slow": "spin 10s linear infinite",
+                "spin-slow": "spin 25s linear infinite",
             },
         },
     },

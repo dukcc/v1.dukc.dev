@@ -67,7 +67,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 	return (
 		<html className={outfit.className} lang="en">
 			<body className="bg-[#050505] overflow-clip">
-				<div className="bg-transparent text-white p-64 max-[800px]:px-24 max-[800px]:pt-48 max-[800px]:pb-24 h-screen
+				<div className="bg-transparent text-text-1 p-64 max-[800px]:px-24 max-[800px]:pt-48 max-[800px]:pb-24 h-screen
 				 overflow-hidden flex flex-col gap-[64px] z-10 max-[800px]:overflow-y-auto">
 					<nav className="flex place-content-between h-fit w-full align-middle place-items-center">
 						<Link href={"/"}>
@@ -79,9 +79,9 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 								alt="dukc logo"
 							/>
 						</Link>
-						<div className="flex gap-[8px] align-middle place-items-center">
+						<div className="flex gap-[8px] items-center">
 							<p className="text-[13px]">Available to work</p>
-							<div className="w-[6px] h-[6px] bg-green rounded-full animate-pulse"></div>
+							<div className="w-[6px] h-[6px] bg-green rounded-[99px] animate-pulse"></div>
 						</div>
 					</nav>
 					<div className="min-h-0 w-full flex max-[800px]:flex-col gap-64 max-[800px]:gap-32 max-[800px]:min-h-auto

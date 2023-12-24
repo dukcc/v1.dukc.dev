@@ -82,6 +82,20 @@ export default function Contact() {
 						>
 							Email
 						</motion.h3>
+						<motion.p
+							initial={{opacity: 0}}
+							whileInView={{opacity: 1}}
+							transition={{
+								type: "spring",
+								stiffness: 300,
+								damping: 50,
+								duration: 0.2,
+								delay: 0.2,
+							}}
+							className="text-body w-fit"
+						>
+							Email: hello@dukc.dev
+						</motion.p>
 						<motion.form
 							initial={{y: -50, opacity: 0}}
 							whileInView={{y: 0, opacity: 1}}
@@ -119,7 +133,7 @@ export default function Contact() {
 								className="fg-1 border w-full h-[10rem] border-stroke-2 rounded-in py-8 px-16 placeholder-white/25 min-h-[48px]"
 							></textarea>
 							<button
-								className="bg-brand-blue/75 rounded-in border border-stroke-2 px-16 py-8 h-fit w-full hover:bg-brand-blue hover:-translate-y-1 active:bg-brand-blue/50 active:translate-y-2 duration-200 cursor-pointer"
+								className="bg-brand-blue/75 text-white rounded-in border border-stroke-2 px-16 py-8 h-fit w-full hover:bg-brand-blue hover:-translate-y-1 active:bg-brand-blue/50 active:translate-y-2 duration-200 cursor-pointer"
 								type="submit"
 							>
 								Send

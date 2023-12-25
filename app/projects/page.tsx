@@ -33,7 +33,7 @@ export default function Projects() {
 				<Project
 					title="Hypercube Website"
 					description='A minimalist, dark website for the new Minecraft SMP called Hypercube. "Thats amazing" - Artsign, owner of server'
-					link1="/work/5-hypercube-website"
+					link1="/work/hypercube-website"
 					link2="https://www.hypercubemc.com/"
 					type="Website"
 				/>

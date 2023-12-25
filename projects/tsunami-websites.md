@@ -2,6 +2,7 @@
 title: "Tsunami Websites"
 type: "Websites"
 date: "Jan 13, 2023"
+jsDate: "2023-01-13"
 image: "https://i.imgur.com/dSoN4uV.png"
 ---
 # Tsunami Websites

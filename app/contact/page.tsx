@@ -5,7 +5,22 @@ import Image from "next/image";
 import {motion} from "framer-motion";
 import {HiMiniClipboard, HiMiniArrowUpRight} from "react-icons/hi2";
 
+import Botpoison from "@botpoison/browser";
+import axios from "axios";
+
+const botpoison = new Botpoison({
+	publicKey: "pk_37f6b95c-9fe9-4cda-994f-7c31b2d6f262"
+  });
+
 export default function Contact() {
+
+	const submit = async () => {
+		const {solution} = await botpoison.challenge()
+		await axios.post("https://submit-form.com/MJTUBgv7", {
+			_botpoison: solution
+		})
+	}
+
 	return (
 		<div className="flex gap-32 min-h-0 max-[800px]:flex-col">
 			<SideNav />
@@ -112,13 +127,8 @@ export default function Contact() {
 								delay: 0.2,
 							}}
 							className="flex flex-col gap-16"
-							action="https://submit-form.com/MJTUBgv7"
+							onSubmit={submit}
 						>
-							<input
-								type="hidden"
-								name="_redirect"
-								value="https://www.dukc.dev/contact"
-							/>
 							<label className="text-body">Name</label>
 							<input
 								type="text"

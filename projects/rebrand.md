@@ -2,6 +2,7 @@
 title: "Rebrand"
 type: "Design"
 date: "May 27, 2023"
+jsDate: "2023-05-27"
 image: "https://i.imgur.com/tKBiLTJ.png"
 ---
 

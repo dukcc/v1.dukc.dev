@@ -2,6 +2,7 @@
 title: "Hypercube Website"
 type: "Website"
 date: "Dec 23, 2023"
+jsDate: "2023-12-23"
 image: "https://i.imgur.com/FdUU4SA.png"
 ---
 # Hypercube Website

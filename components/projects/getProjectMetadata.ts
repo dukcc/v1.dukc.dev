@@ -16,9 +16,10 @@ const getProjectMetadata = (): ProjectMetadata[] => {
             type: matterResult.data.type,
             image: matterResult.data.image,
             date: matterResult.data.date,
-            slug: filename.replace(".md", "")
+            jsDate: new Date(matterResult.data.jsDate),
+            slug: filename.replace(".md", ""),
         }
-    })
+    }).sort((a, b) => b.jsDate.getTime() - a.jsDate.getTime());
 
     return projects;
 }

@@ -25,8 +25,8 @@ export default function Project(props: any) {
 	return (
 		<div className="flex h-full gap-32 min-h-0 max-[800px]:flex-col">
 			<SideNav />
-			<div className="w-full overflow-y-auto flex place-content-center h-full p-48 max-[800px]:p-24 bg-1 border border-stroke-1 backdrop-blur-main rounded-out">
-				<article className="prose w-full prose-img:rounded-out lg:prose-xl prose-h1:text-white prose-h2:text-white prose-h3:text-white prose-h4:text-white prose-h6:text-white prose-p:text-[#d3d3d3] prose-a:text-brand-blue hover:prose-a:text-brand-blue/75 prose-code:text-[#b3b3b3] prose-li:text-[#e1e1e1] prose-ul:text-[#d3d3d3] prose-blockquote:text-[#d3d3d3]">
+			<div className="w-full overflow-y-auto flex place-content-center h-full p-96 max-[800px]:p-24 bg-1 border border-stroke-1 backdrop-blur-main rounded-out">
+				<article className="prose w-full prose-img:rounded-out lg:prose-xl prose-h1:text-1 prose-h1: prose-h2:text-2 prose-h3:text-3 prose-p:text-text-1 prose-headings:text-text-1 prose-a:text-brand-blue hover:prose-a:text-brand-blue/75 prose-code:text-[#b3b3b3] prose-li:text-text-1 prose-ul:text-text-1 prose-blockquote:text-[#d3d3d3]">
 					<Markdown>{content}</Markdown>
 				</article>
 				<div className="h-screen"></div>

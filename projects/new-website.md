@@ -2,6 +2,7 @@
 title: "New Website"
 type: "Website"
 date: "Aug 21, 2023"
+jsDate: "2023-08-21"
 image: "https://i.imgur.com/0QUlKYn.png"
 ---
 

@@ -50,12 +50,22 @@ const config: Config = {
 		fontFamily: {
 			sans: ["Outfit"],
 		},
+		boxShadow: {
+			fg: "0px -6px 24px -2px rgba(0, 0, 0, 0.14) inset, 0px 0px 56px 0px rgba(0, 0, 0, 0.08)",
+		},
 		extend: {
+			backgroundImage: {
+				"bg-1": "linear-gradient(180deg, rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.9))",
+				"fg-1": "linear-gradient(180deg, rgba(122, 122, 122, 0.13), rgba(122, 122, 122, 0.05))",
+				"fg-1-focus": "linear-gradient(180deg, rgba(122, 122, 122, 0.27), rgba(122, 122, 122, 0.18))",
+			},
 			colors: {
 				// ui styles
-				"stroke-1": "rgb(255,255,255,0.08)",
-                "stroke-2": "rgb(255,255,255,0.05)",
+				"stroke-1": "rgb(255,255,255,0.09)",
+                "stroke-2": "rgb(255,255,255,0.04)",
 				"text-1": "#DEDEDE",
+				"text-1-subtle": "rgba(222, 222, 222, 0.75)",
+				"text-1-disabled": "rgba(255, 255, 255, 0.3)",
 				// colours
 				selected: "#0db7ff",
 				"brand-blue": "#0db7ff",

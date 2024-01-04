@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import localFont from "next/font/local";
 import {Viewport} from "next";
+import Status from "@/components/Status";
 
 export const viewport: Viewport = {
 	width: "device-width",
@@ -79,10 +80,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 								alt="dukc logo"
 							/>
 						</Link>
-						<div className="flex gap-[8px] items-center">
-							<p className="text-[13px]">Available to work</p>
-							<div className="w-[6px] h-[6px] bg-green rounded-[99px] animate-pulse"></div>
-						</div>
+						<Status />
 					</nav>
 					<div className="min-h-0 w-full flex max-[800px]:flex-col gap-64 max-[800px]:gap-32 max-[800px]:min-h-auto
 					">

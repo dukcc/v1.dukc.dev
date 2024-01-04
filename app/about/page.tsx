@@ -3,14 +3,14 @@
 import SideNav from "@/components/SideNav";
 import Image from "next/image";
 import Link from "next/link";
-import {HiArrowUpRight} from "react-icons/hi2";
+import LinkButton from "@/components/LinkButton";
 import {motion} from "framer-motion";
 
 export default function About() {
 	return (
 		<div className="flex gap-32 min-h-0 max-[800px]:flex-col">
 			<SideNav />
-			<div className="w-full overflow-hidden h-full flex bg-1 border border-stroke-1 backdrop-blur-main rounded-out max-[800px]:overflow-y-auto">
+			<div className="w-full overflow-hidden h-full flex bg-bg-1 border border-stroke-1 backdrop-blur-main rounded-out max-[800px]:overflow-y-auto">
 				<div className="flex flex-col max-[800px]:place-content-start gap-[86px] max-[800px]:gap-[64px] p-[64px] max-[800px]:p-32 h-full w-full overflow-y-scroll">
 					<motion.div
 						initial={{y: -50, opacity: 0}}
@@ -143,20 +143,8 @@ export default function About() {
 						</div>
 					</motion.div>
 					<div className="flex flex-wrap gap-16">
-						<Link
-							href="/contact"
-							className="flex gap-8 w-fit place-items-center hover-active-effect"
-						>
-							<p className="text-body font-medium">Contact me</p>
-							<HiArrowUpRight className="w-[24px] h-[24px]" />
-						</Link>
-						<Link
-							href="/projects"
-							className="flex gap-8 w-fit place-items-center hover-active-effect"
-						>
-							<p className="text-body font-medium">List of clients/projects</p>
-							<HiArrowUpRight className="w-[24px] h-[24px]" />
-						</Link>
+						<LinkButton text="Contact me" link="/contact"/>
+						<LinkButton text="List of clients/projects" link="/projects" />
 					</div>
 				</div>
 				<Image

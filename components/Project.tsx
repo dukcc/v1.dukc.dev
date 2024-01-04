@@ -1,7 +1,6 @@
 "use client";
 
-import Link from "next/link";
-import {HiArrowUpRight} from "react-icons/hi2";
+import LinkButton from "./LinkButton";
 import {motion} from "framer-motion";
 
 interface ProjectProps {
@@ -37,20 +36,8 @@ export default function Project({
 				<p className="text-body leading-[200%]">{description}</p>
 				<div className="flex gap-64 gap-y-8 flex-wrap">
 					<p className="text-sub">{type}</p>
-					<Link
-						href={link1}
-						className="flex gap-8 place-items-center hover-active-effect"
-					>
-						<p className="text-sub">Learn More</p>
-						<HiArrowUpRight className="w-[24px] h-[24px]" />
-					</Link>
-					<Link
-						href={link2}
-						className="flex gap-8 place-items-center hover-active-effect"
-					>
-						<p className="text-sub">Website</p>
-						<HiArrowUpRight className="w-[24px] h-[24px]" />
-					</Link>
+					<LinkButton sub text="Learn More" link={link1} />
+					<LinkButton sub text="Website" link={link2} />
 				</div>
 			</div>
 		</motion.div>

@@ -5,8 +5,8 @@ export default function Projects() {
 	return (
 		<div className="flex gap-32 h-full min-h-0 max-[800px]:flex-col">
 			<SideNav />
-			<div className="w-full overflow-y-auto h-full flex flex-col gap-48 max-[800px]:p-32 p-64 bg-1 border border-stroke-1 backdrop-blur-main rounded-out">
-				<h1 className="text-1 font-bold">Projects and Clients</h1>
+			<div className="w-full overflow-y-auto h-full flex flex-col gap-48 max-[800px]:p-32 p-64 bg-bg-1 border border-stroke-1 backdrop-blur-main rounded-out">
+				<h2 className="text-2 font-semibold">Projects and Clients</h2>
 				<Project
 					title="DuckyHQ"
 					description="An organization creating unique open source software for the world."

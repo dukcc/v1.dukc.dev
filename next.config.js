@@ -5,6 +5,16 @@ const nextConfig = {
 		// your project has ESLint errors.
 		ignoreDuringBuilds: true,
 	},
+	images: {
+		remotePatterns: [
+			{
+				protocol: "https",
+				hostname: "i.imgur.com",
+				port: "",
+				pathname: "/**",
+			},
+		],
+	},
 };
 
 module.exports = nextConfig;

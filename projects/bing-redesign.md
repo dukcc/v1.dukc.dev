@@ -1,23 +1,23 @@
 ---
 title: "Bing Redesign"
 type: "Redesign Concept"
-date: "June 1, 2023"
-jsDate: "2023-06-01"
+date: "2023-06-01"
 image: "https://i.imgur.com/8md7sAk.png"
 ---
-
-![Head Image](https://i.imgur.com/8md7sAk.png)
 
 # Bing Redesign
 
 #### Watch the video:
 [Click me](https://www.youtube.com/watch?v=8ubHW9GZZec)
 
-Introducing a whole new Bing. With a new simplistic home page, and dark mode search page, and a Bing AI Chat redesign. You can generate text, images, code, and audio with the new Bing AI. And interact with it better, with a new right panel where you can access your recent chats, and trending topics.
+I redesigned Bing. This is my first Fluent UI concept, because it's my first, it isn't that great.. This was made for the Concept Central AI Chat Redesign Contest.
 
 This is not real software. This is a concept, made in Figma and After Effects by me. I am not affiliated with Microsoft.
 
 ## Bing AI
+
+
+You can generate text, images, code, and audio with the new Bing Chat. See all the trending topics, and your separated chats on the right panel, along with more information.
 
 All new homepage, with the right panel to access recent and trending topics.
 ![](https://i.imgur.com/Bo4UvD4.png)
@@ -34,9 +34,8 @@ And even generate audio.
 
 ## Search Engine
 
-The new simplified search page.
-![](https://i.imgur.com/8aRZRdM.png)
+There is a new simplistic, customizable home page. When you search, you get to see all of the content in dark mode, and images/videos on the right side.
 
-The new search engine, compatible with dark mode, and with images/videos appearing on the new right panel.
+![](https://i.imgur.com/8aRZRdM.png)
 
 ![](https://i.imgur.com/sNgXx1x.png)

@@ -18,7 +18,7 @@ export default function LinkButton({
 			}`}
 		>
 			<p>{text}</p>
-			<HiMiniArrowUpRight className="group-hover:rotate-45 ease-out duration-500" />
+			<HiMiniArrowUpRight className="group-hover:rotate-45 ease-out duration-500 text-strong-body" />
 		</Link>
 	);
 }

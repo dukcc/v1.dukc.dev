@@ -6,6 +6,9 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import {Viewport} from "next";
 import Status from "@/components/Status";
+import {usePathname} from "next/navigation";
+import LayoutHeader from "@/components/LayoutHeader";
+import SideNav from "@/components/SideNav";
 
 export const viewport: Viewport = {
 	width: "device-width",
@@ -15,7 +18,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-	metadataBase: new URL('https://dukc.dev'),
+	metadataBase: new URL("https://dukc.dev"),
 	title: "dukc",
 	description:
 		"I'm dukc. And I'm a versatile designer / web developer skilled in UI, graphic, motion design, and React / Vue",
@@ -59,17 +62,14 @@ export const metadata: Metadata = {
 
 const outfit = Outfit({subsets: ["latin"]});
 
-const hanson = localFont({
-	src: "./hanson.woff2",
-	display: "swap",
-});
-
 export default function RootLayout({children}: {children: React.ReactNode}) {
 	return (
 		<html className={outfit.className} lang="en">
-			<body className="bg-[#050505] overflow-clip">
-				<div className="bg-transparent text-text-1 p-64 max-[800px]:px-24 max-[800px]:pt-48 max-[800px]:pb-24 h-screen
-				 overflow-hidden flex flex-col gap-[64px] z-10 max-[800px]:overflow-y-auto">
+			<body className="bg-[#050505] overflow-hidden">
+				<div
+					className="bg-transparent text-text-1 p-64 max-[800px]:px-24 max-[800px]:pt-32 h-screen
+				 overflow-hidden flex flex-col gap-48 z-10 max-[800px]:overflow-y-auto max-[800px]:overflow-x-hidden"
+				>
 					<nav className="flex place-content-between h-fit w-full align-middle place-items-center">
 						<Link href={"/"}>
 							<Image
@@ -82,23 +82,19 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 						</Link>
 						<Status />
 					</nav>
-					<div className="min-h-0 w-full flex max-[800px]:flex-col gap-64 max-[800px]:gap-32 max-[800px]:min-h-auto
-					">
+					<div
+						className="min-h-0 w-full flex max-[800px]:flex-col gap-64 max-[800px]:gap-32 max-[800px]:min-h-auto
+					"
+					>
 						<div
 							id="left"
 							className="w-full h-full flex flex-col gap-32 max-[800px]:gap-24"
 						>
-							<div className="flex flex-col gap-32">
-								<h1
-									className={`${hanson.className} text-[75px] max-[800px]:text-1 leading-[50%] text-white`}
-								>
-									dukc
-								</h1>
-								<p className="text-body max-[515px]:hidden">
-									UI, graphic, motion designer, & front-end web developer.
-								</p>
+							<LayoutHeader />
+							<div className="flex h-full gap-32 min-h-0 max-[800px]:flex-col">
+								<SideNav />
+								{children}
 							</div>
-							{children}
 						</div>
 						<div
 							id="right"

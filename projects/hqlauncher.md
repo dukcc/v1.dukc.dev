@@ -1,12 +1,9 @@
 ---
 title: "HQLauncher"
 type: "App"
-date: "Aug 21, 2023"
-jsDate: "2023-08-21"
+date: "2023-08-21"
 image: "https://i.imgur.com/v35KQLJ.png"
 ---
-
-![Head Image](https://i.imgur.com/v35KQLJ.png)
 
 # HQLauncher
 

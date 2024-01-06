@@ -1,12 +1,9 @@
 ---
 title: "Visual Studio Code Redesign"
 type: "Redesign Concept"
-date: "Sept 27, 2023"
-jsDate: "2023-09-27"
+date: "2023-09-27"
 image: "https://i.imgur.com/GRN5XHy.png"
 ---
-
-![Head Image](https://i.imgur.com/GRN5XHy.png)
 
 # Visual Studio Code Redesign
 ### Concept
@@ -14,12 +11,13 @@ image: "https://i.imgur.com/GRN5XHy.png"
 #### Watch the video:
 [Click me](https://youtu.be/HrlNTIbo9o4)
 
-I gave Visual Studio Code a new redesign, using Fluent UI 2.
-With a brand new UI, redesigned status bar / status widget, all new extensions page, settings page, and accounts page.
+I gave Visual Studio Code a redesign, using Windows 11 design language.
 
-Need help with some code? Ask copilot about it. Right click on an error to find out what it means, all with whatever AI engine you want. Bing AI, Phind (GPT-4), GitHub Copilot, or Google Bard.
+Not much of the layout changed, mainly the cards, look, and feel of the app. I wanted it to feel more tied in with Windows 11. And I know VS Code is multi platform, and I don't know what the app would look like on other platforms. This is just a concept.
 
-The project I featured in the code editor is [HQLauncher (click)](https://www.duckyhq.com/projects/HQLauncher)
+Copilot is now in VS Code, for free. Right click on an error to find out what it means, with whatever AI engine you want. Bing AI, Phind (GPT-4), GitHub Copilot, or Google Bard.
+
+The project I featured in the code editor is [HQLauncher (click)](/work/hqlauncher)
 
 This is just a concept, NOT a real product.
 I am not affiliated with Microsoft.

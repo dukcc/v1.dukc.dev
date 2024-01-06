@@ -1,12 +1,9 @@
 ---
 title: "Rebrand"
 type: "Design"
-date: "May 27, 2023"
-jsDate: "2023-05-27"
+date: "2023-05-27"
 image: "https://i.imgur.com/tKBiLTJ.png"
 ---
-
-![Head Image](https://i.imgur.com/tKBiLTJ.png)
 
 # Rebrand
 
@@ -15,13 +12,11 @@ Get ready for some new, innovative concepts and apps.
 
 ## Design
 
-I went for a new color scheme, to look more neon, and glowy.
+I went for a new colour scheme for all of my logos. It's bright, and neon. Then I picked out some new fonts, I liked using Outfit for some designs, but it wasn't in my design language, so I switched it to Outfit. I like the trend of using wide, bold fonts for big text and headings, so I chose Hanson for big text.
 
-I've redesigned the website to make it more unique, inspired by HQLauncher.
+For promotion images, I like using simple blurred, grainy shapes with my brand colours, with thin lined geometry images to create a pleasing background. Then I add a brief summary of what the image about in text, and use 3D rotated images to finish the image.
 
-And I've picked out some new fonts, to look more bold I went with Hanson for headings, and Outfit for body text.
-
-I spent some time making a promotion video in After Effects for this rebrand. Check it out:
+I also spent some time making a promotion video in After Effects for this rebrand. Check it out:
 
 [Rebrand Video](https://www.youtube.com/watch?v=A3XZN9Is7WU&ab_channel=dukc)
 
@@ -31,5 +26,5 @@ I spent some time making a promotion video in After Effects for this rebrand. Ch
 ![](https://i.imgur.com/XuZOTu1.png)
 ![](https://i.imgur.com/ZvjtwrW.png)
 
-I also spend quite a bit of time making this interior in Blender for a 1 second part in the video, so I thought I would share it more:
+I also spend quite a bit of time making this interior in Blender for a 1 second part in the video, so I thought I'd share it more:
 ![](https://i.imgur.com/EzmnRrZ.png)

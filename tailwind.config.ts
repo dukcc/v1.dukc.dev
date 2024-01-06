@@ -46,6 +46,7 @@ const config: Config = {
 			32: "32px",
 			out: "16px",
 			in: "9px",
+			full: "9999px"
 		},
 		fontFamily: {
 			sans: ["Outfit"],

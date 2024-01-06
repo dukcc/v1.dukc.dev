@@ -2,25 +2,11 @@
 
 import Image from "next/image";
 import {motion} from "framer-motion";
-import {HiMiniClipboard, HiMiniArrowUpRight} from "react-icons/hi2";
-
-import Botpoison from "@botpoison/browser";
-import axios from "axios";
+import {HiMiniClipboard} from "react-icons/hi2";
 import LinkButton from "@/components/LinkButton";
 import Status from "@/components/Status";
 
-const botpoison = new Botpoison({
-	publicKey: "pk_37f6b95c-9fe9-4cda-994f-7c31b2d6f262",
-});
-
 export default function Contact() {
-	const submit = async () => {
-		const {solution} = await botpoison.challenge();
-		await axios.post("https://submit-form.com/MJTUBgv7", {
-			_botpoison: solution,
-		});
-	};
-
 	return (
 		<div className="w-full overflow-hidden h-full flex bg-bg-1 border border-stroke-1 backdrop-blur-main rounded-out">
 			<div className="flex flex-col max-[800px]:place-content-start gap-128 p-64 max-[800px]:p-32 h-full w-full overflow-y-scroll">
@@ -128,8 +114,9 @@ export default function Contact() {
 							delay: 0.2,
 						}}
 						className="flex flex-col gap-16"
-						onSubmit={submit}
+						action="https://submit-form.com/MJTUBgv7"
 					>
+						<input type="hidden" name="_feedback.dark" value="true" />
 						<input
 							type="text"
 							id="name"

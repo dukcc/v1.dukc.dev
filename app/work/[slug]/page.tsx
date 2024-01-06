@@ -45,7 +45,7 @@ export default function Project(props: any) {
 				</Link>
 				<p className="text-body">{moment(date).format("MMMM D, YYYY")}</p>
 			</div>
-			<article className="px-32 prose w-full prose-img:rounded-out lg:prose-xl prose-h1:text-1 prose-h1: prose-h2:text-2 prose-h3:text-3 prose-p:text-text-1 prose-headings:w-full prose-headings:text-text-1 prose-a:text-brand-blue hover:prose-a:text-brand-blue/75 prose-code:text-[#b3b3b3] prose-li:text-text-1 prose-ul:text-text-1 prose-blockquote:text-[#d3d3d3]">
+			<article className="px-32 pb-72 prose w-full prose-img:rounded-in lg:prose-xl prose-h1:text-1 prose-h1:font-bold prose-h2:text-2 prose-h3:text-3 prose-p:text-text-1 prose-p:text-body prose-li:text-body prose-ul:text-body prose-p:font-normal prose-headings:w-full prose-headings:text-text-1 prose-a:text-brand-blue prose-a:font-normal prose-a:ease-out prose-a:transition-all prose-a:duration-150 hover:prose-a:text-brand-blue/80 prose-code:text-[#b3b3b3] prose-li:text-text-1 prose-ul:text-text-1 prose-blockquote:text-[#d3d3d3]">
 				<Markdown>{content}</Markdown>
 			</article>
 			<div className="h-screen"></div>

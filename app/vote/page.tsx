@@ -11,7 +11,7 @@ export default function Vote() {
         <Image src={"/vote/glass/Sign In.png"} width={430} height={932} alt="image" className="w-full aspect-[9/19.5] h-auto" />
       </div>
       <h3 className="text-3 font-medium">Neumorphic</h3>
-      <div className="grid grid-cols-4 max-[1800px]:grid-cols-3 w-full h-fit max-[1500px]:grid-cols-2 max-[1200px]:grid-cols-1 gap-24">
+      <div className="grid grid-cols-4 max-[1800px]:grid-cols-3 w-full h-fit mt-[944px] max-[1500px]:grid-cols-2 max-[1200px]:grid-cols-1 gap-24">
         <Image src={"/vote/neu/Home.png"} width={430} height={932} alt="image" className="w-full aspect-[9/19.5] h-auto" />
         <Image src={"/vote/neu/Short.png"} width={430} height={932} alt="image" className="w-full aspect-[9/19.5] h-auto" />
         <Image src={"/vote/neu/Video.png"} width={430} height={932} alt="image" className="w-full aspect-[9/19.5] h-auto" />

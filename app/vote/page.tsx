@@ -1,4 +1,5 @@
 import Image from "next/image";
+import LinkButton from "@/components/LinkButton"
 
 export default function Vote() {
   return (
@@ -10,6 +11,7 @@ export default function Vote() {
         <Image src={"/vote/glass/Video.png"} width={430} height={932} alt="image" className="w-full aspect-[9/19.5] h-auto rounded-in" />
         <Image src={"/vote/glass/Sign In.png"} width={430} height={932} alt="image" className="w-full aspect-[9/19.5] h-auto rounded-in" />
       </div>
+      <LinkButton text="Go to next page" link="/vote2" />
     </div>
   );
 }

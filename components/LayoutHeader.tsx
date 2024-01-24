@@ -12,7 +12,7 @@ export default function LayoutHeader() {
 	const pathname = usePathname();
 	return (
 		<>
-			{!pathname.startsWith("/work/") && (
+			{!pathname.startsWith("/work/") && !pathname.startsWith("/vote") && (
 				<div className="flex flex-col gap-32">
 					<h1
 						className={`${hanson.className} text-[75px] max-[800px]:text-1 leading-[50%] text-white`}

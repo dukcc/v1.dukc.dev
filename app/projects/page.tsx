@@ -3,13 +3,13 @@ import Project from "@/components/Project";
 export default function Projects() {
 	return (
 		<div className="w-full overflow-y-auto h-full flex flex-col gap-48 max-[800px]:p-32 p-64 bg-bg-1 border border-stroke-1 backdrop-blur-main rounded-out">
-			<h2 className="text-2 font-semibold">Projects and Clients</h2>
+			<h2 className="text-2 font-medium">Projects and Clients</h2>
 			<Project
 				title="DuckyHQ"
 				description="An organization creating unique open source software for the world."
 				link1="https://duckyhq.com"
 				link2="https://duckyhq.com"
-				type="Organization - Project"
+				type="Organization"
 			/>
 			<Project
 				title="HQLauncher"
@@ -29,7 +29,7 @@ export default function Projects() {
 			/>
 			<Project
 				title="Hypercube Website"
-				description='A minimalist, dark website for the new Minecraft SMP called Hypercube. "Thats amazing" - Artsign, owner of server'
+				description='A minimalist, dark website for the new Minecraft SMP called Hypercube.'
 				link1="/work/hypercube-website"
 				link2="https://www.hypercubemc.com/"
 				type="Website - Client"

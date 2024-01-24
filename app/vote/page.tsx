@@ -10,13 +10,7 @@ export default function Vote() {
         <Image src={"/vote/glass/Video.png"} width={430} height={932} alt="image" className="w-full aspect-[9/19.5] h-auto rounded-in" />
         <Image src={"/vote/glass/Sign In.png"} width={430} height={932} alt="image" className="w-full aspect-[9/19.5] h-auto rounded-in" />
       </div>
-      <h3 className="text-3 font-medium">Neumorphic</h3>
-      <div className="grid grid-cols-4 max-[1800px]:grid-cols-3 w-full h-fit mt-[944px] max-[1500px]:grid-cols-2 max-[1500px]:mt-[1888px] max-[1200px]:grid-cols-1 gap-24">
-        <Image src={"/vote/neu/Home.png"} width={430} height={932} alt="image" className="w-full aspect-[9/19.5] h-auto rounded-in" />
-        <Image src={"/vote/neu/Short.png"} width={430} height={932} alt="image" className="w-full aspect-[9/19.5] h-auto rounded-in" />
-        <Image src={"/vote/neu/Video.png"} width={430} height={932} alt="image" className="w-full aspect-[9/19.5] h-auto rounded-in" />
-        <Image src={"/vote/neu/Sign In.png"} width={430} height={932} alt="image" className="w-full aspect-[9/19.5] h-auto rounded-in" />
-      </div>
+      
       <h2 className="text-2 font-medium">Vote Here</h2>
       <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLSddB8gMRrZGxkINAqwY8Wk1Q6RUchfjodPpL3OWucLmvILh-g/viewform?embedded=true"

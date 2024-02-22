@@ -57,6 +57,18 @@ export default function Socials() {
                 src="/icons/github.svg"
               />
             </Link>
+            <Link
+              href={"https://twitch.tv/dukcccc"}
+              target="_blank"
+              className="hover-active-effect"
+            >
+              <Image
+                width={36}
+                height={36}
+                alt="Twitch"
+                src="/icons/twitch.svg"
+              />
+            </Link>
           </div>
           <div className="w-[1px] h-full border border-white/10 max-[800px]:hidden"></div>
         </div>

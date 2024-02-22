@@ -152,7 +152,8 @@ export default function About() {
               Other Skills & Hobbies
             </p>
             <p className="text-body">
-              Video editing, photography, trombone, music & sound
+              Gaming, streaming, video editing, photography, trombone, music &
+              sound
             </p>
           </div>
         </motion.div>

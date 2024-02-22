@@ -158,7 +158,11 @@ export default function About() {
         </motion.div>
 
         <div className="flex flex-wrap gap-16">
-          <LinkButton text="Website by dukc" link="https://github.com/dukcc/DukcWebsite" /> {/* please keep this here if you are using this code as a template, credit me!*/}
+          <LinkButton
+            text="Website by dukc"
+            link="https://github.com/dukcc/DukcWebsite"
+          />
+          {/* Please keep this here if you are using this code as a template, credit me!*/}
           <LinkButton text="Contact Me" link="/contact" />
           <LinkButton text="Clients & Projects" link="/projects" />
         </div>

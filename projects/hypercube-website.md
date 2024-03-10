@@ -1,9 +1,10 @@
 ---
 title: "Hypercube Website"
-type: "Website"
+type: "Client Website"
 date: "2023-12-23"
 image: "https://i.imgur.com/FdUU4SA.png"
 ---
+
 # Hypercube Website
 
 I designed a minimalist website with a dark theme for Hypercube. I organized the information with separate boxes, each one of them having a Minecraft command styled title, to give it more of a Minecraft feel.

@@ -10,6 +10,7 @@ import { usePathname } from "next/navigation";
 import LayoutHeader from "@/components/LayoutHeader";
 import SideNav from "@/components/SideNav";
 import Socials from "@/components/Socials";
+import BlobAnimation from "@/components/BlobAnimation";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -70,10 +71,10 @@ export default function RootLayout({
 }) {
   return (
     <html className={outfit.className} lang="en">
-      <body className="bg-[#050505] overflow-hidden">
+      <body className="bg-[#000000] overflow-hidden">
         <div
           className="bg-transparent text-text-1 p-64 max-[800px]:px-24 max-[800px]:pt-32 h-screen
-				 overflow-hidden flex flex-col gap-48 z-10 max-[800px]:overflow-y-auto max-[800px]:overflow-x-hidden"
+				 overflow-hidden flex flex-col gap-48 z-50 max-[800px]:overflow-y-auto max-[800px]:overflow-x-hidden"
         >
           <nav className="flex place-content-between h-fit w-full align-middle place-items-center">
             <Link href={"/"}>
@@ -87,10 +88,7 @@ export default function RootLayout({
             </Link>
             <Status />
           </nav>
-          <div
-            className="min-h-0 w-full flex max-[800px]:flex-col gap-64 max-[800px]:gap-32 max-[800px]:min-h-auto
-					"
-          >
+          <div className="min-h-0 w-full flex max-[800px]:flex-col gap-64 max-[800px]:gap-32 max-[800px]:min-h-auto">
             <div
               id="left"
               className="w-full h-full flex flex-col gap-32 max-[800px]:gap-24"
@@ -104,8 +102,7 @@ export default function RootLayout({
             <Socials />
           </div>
         </div>
-        <div className="relative bottom-[70vh] left-[10vw] h-[30rem] w-[40rem] blur-[256px] bg-gradient-to-tr animate-spin-slow from-brand-blue to-brand-purple rounded-full -z-50"></div>
-        <div className="relative bottom-[90vh] left-[80vw] opacity-50 h-[40rem] w-[35rem] blur-[256px] bg-gradient-to-tr animate-spin-slow from-brand-purple to-brand-purple rounded-full -z-50"></div>
+        <BlobAnimation />
       </body>
     </html>
   );

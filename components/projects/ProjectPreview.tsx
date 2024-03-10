@@ -30,7 +30,7 @@ export default function ProjectPreview(props: ProjectMetadata) {
       <Tilt options={tiltOptions}>
         <Link
           href={`/work/${props.slug}`}
-          className="bg-cover bg-center bg-clip-padding w-full h-auto aspect-[3/3] max-[800px]:aspect-[1.7/2.21] max-[600px]:aspect-[1.7/1.35] flex flex-col place-content-end align-bottom place-items-end p-32 rounded-in border border-stroke-2 hover:scale-[1.04] active:scale-[.75] duration-150 ease-out max-[540px]:p-24"
+          className="bg-cover bg-center bg-clip-padding bg-no-repeat w-full h-auto aspect-[3/3] max-[800px]:aspect-[1.7/2.21] max-[600px]:aspect-[1.7/1.35] flex flex-col place-content-end align-bottom place-items-end p-32 rounded-in border border-stroke-2 max-[540px]:p-24 hover:scale- active:scale-75 duration-150 ease-out"
           style={{
             backgroundImage: `linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.8)), url(${props.image})`,
           }}

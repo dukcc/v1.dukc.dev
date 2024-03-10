@@ -1,13 +1,13 @@
 import fs from "fs";
 import Markdown from "markdown-to-jsx";
-import getProjectMetadata from "../../../components/projects/getProjectMetadata";
+import getBlogMetadata from "../../../components/blogs/getBlogMetadata";
 import matter from "gray-matter";
 import { HiMiniArrowLeft } from "react-icons/hi2";
 import Link from "next/link";
 import moment from "moment";
 
-const getProjectContent = (slug: string) => {
-  const folder = "projects/";
+const getBlogContent = (slug: string) => {
+  const folder = "blogs/";
   const file = `${folder}${slug}.md`;
   const content = fs.readFileSync(file, "utf8");
   const matterResult = matter(content);
@@ -19,15 +19,15 @@ const getProjectContent = (slug: string) => {
 };
 
 export const generateStaticParams = () => {
-  const projects = getProjectMetadata();
-  return projects.map((project) => ({
-    slug: project.slug,
+  const blogs = getBlogMetadata();
+  return blogs.map((blog) => ({
+    slug: blog.slug,
   }));
 };
 
-export default function Project(props: any) {
+export default function Blog(props: any) {
   const slug = props.params.slug;
-  const { content, image, date } = getProjectContent(slug);
+  const { content, image, date } = getBlogContent(slug);
   return (
     <div className="w-full overflow-y-auto overflow-clip flex flex-col items-center h-full gap-64 bg-bg-1 border border-stroke-1 backdrop-blur-main rounded-out">
       <div
@@ -37,7 +37,7 @@ export default function Project(props: any) {
         }}
       >
         <Link
-          href={"/"}
+          href={"/posts"}
           className="flex gap-8 w-fit group place-items-center hover:text-brand-blue ease-out duration-500"
         >
           <HiMiniArrowLeft className="group-hover:rotate-[135deg] ease-out duration-500" />

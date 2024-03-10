@@ -27,7 +27,10 @@ export default function About() {
             design, motion design, 3D design, & front-end web development. I
             focus on creating innovative apps, websites, tools, & concept
             videos. I am also learning Rust, and I like experimenting with
-            Python, Discord.js, and other software.
+            Python, Discord.js, and other software. <br /> <br />I also love
+            playing survival/automation games, such as Factorio, Satisfactory,
+            Minecraft, and Valheim. I also stream my self playing games or
+            working on Twitch!
           </p>
         </motion.div>
         <motion.div
@@ -152,10 +155,26 @@ export default function About() {
               Other Skills & Hobbies
             </p>
             <p className="text-body">
-              Gaming, streaming, video editing, photography, trombone, music &
-              sound
+              Gaming, streaming, trombone, architecture, video editing,
+              photography
             </p>
           </div>
+        </motion.div>
+        <motion.div
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 50,
+            duration: 0.2,
+            delay: 0,
+          }}
+          className="flex flex-col gap-16 h-fit w-full"
+        >
+          <h2 className="text-2 font-medium">Organizations</h2>
+          <LinkButton text="DuckyHQ" link="https://www.duckyhq.com" />
+          <LinkButton text="Alive" link="https://alive.duckyhq.com" />
         </motion.div>
 
         <div className="flex flex-wrap gap-16">
@@ -164,8 +183,7 @@ export default function About() {
             link="https://github.com/dukcc/DukcWebsite"
           />
           {/* Please keep this here if you are using this code as a template, credit me!*/}
-          <LinkButton text="Contact Me" link="/contact" />
-          <LinkButton text="Clients & Projects" link="/projects" />
+          <LinkButton text="Contact me" link="/contact" />
         </div>
       </div>
       <Image

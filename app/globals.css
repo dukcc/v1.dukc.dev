@@ -4,14 +4,13 @@
 
 @layer components {
   .hover-active-effect {
-    @apply hover:scale-[.9] transition-all duration-150 active:scale-[.75];
+    @apply hover:text-selected transition-all duration-150 active:text-selected/75 ease-out;
   }
-  .bg-1 {
-    @apply bg-gradient-to-b from-[#0f0f0f]/75 to-[#0f0f0f]/90
-  }
-  .fg-1 {
-    @apply bg-white/[.03]
-  }
+}
+
+.blob-blur {
+  filter: blur(32vmax);
+  -webkit-filter: blur(32vmax);
 }
 
 html {

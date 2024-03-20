@@ -46,6 +46,18 @@ export default function Socials() {
               />
             </Link>
             <Link
+              href={"https://patreon.com/dukc"}
+              target="_blank"
+              className="hover-active-effect"
+            >
+              <Image
+                width={36}
+                height={36}
+                alt="Patreon"
+                src="/icons/patreon.svg"
+              />
+            </Link>
+            <Link
               href={"https://github.com/dukcc"}
               target="_blank"
               className="hover-active-effect"

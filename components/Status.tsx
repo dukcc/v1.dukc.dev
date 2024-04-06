@@ -1,5 +1,5 @@
 export default function Status() {
-  const available = true;
+  const available = false;
   return (
     <div className="flex gap-8 items-center">
       <p className="text-sub">

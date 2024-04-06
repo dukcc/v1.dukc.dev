@@ -40,12 +40,14 @@ export default function Contact() {
             }}
             className="text-body leading-[225%]"
           >
-            Want to work with me? Send me a message via Discord or Email. <br />
+            {/** Want to work with me? Send me a message via Discord or Email. <br />
             UI or Website Design - I will create you a UI design in Figma for
             you to use. <br />
             Simple Website - I will create a website design and code it for you.
             <br />
-            Payment is up-front and through PayPal.
+          Payment is up-front and through PayPal. **/}
+            I am currently at capacity with work. But if you want to reach out
+            you can still contact me!
           </motion.p>
           <motion.h3
             initial={{ y: -50, opacity: 0 }}
